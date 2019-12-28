@@ -1,0 +1,31 @@
+﻿@charset "UTF-8";
+.main_notice .main section {
+  width: 100%;
+  background: #fff;
+  margin: 8px 0;
+  box-shadow: 0 4px 5px #e8e8e8;
+  padding: 0.3rem 0 0.3rem 0;
+}
+.main_notice .main section:nth-child(1) {
+  margin-top: 0.1rem;
+}
+.main_notice .main section .content {
+  width: 90%;
+  margin: auto;
+  font-size: 0.11rem;
+}
+.main_notice .main section .content.content_top {
+  margin-bottom: 0.2rem;
+}
+.main_notice .main section .content.content_bottom span {
+  display: block;
+}
+.main_notice .main section .content .title {
+  width: 75%;
+  font-size: 0.12rem;
+  font-weight: bolder;
+}
+.main_notice .main section .content .date {
+  font-size: 0.1rem;
+  color: #9c9c9c;
+}

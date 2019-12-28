@@ -1,0 +1,312 @@
+﻿@charset "UTF-8";
+.main_cake_coupon_exchange .main {
+  background: #ffffff;
+}
+.main_cake_coupon_exchange .main section img {
+  display: block;
+}
+.main_cake_coupon_exchange .main nav {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 0;
+  z-index: 2;
+  padding: 0.1rem;
+}
+.main_cake_coupon_exchange .main nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(222, 222, 222, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(222, 222, 222, 0.6);
+  width: 100%;
+}
+.main_cake_coupon_exchange .main nav a {
+  display: inline-block;
+  width: 1.1rem;
+  height: 0.32rem;
+  line-height: 0.32rem;
+  text-align: center;
+  color: #9c9c9c;
+  margin-left: 0.15rem;
+  font-size: 0.12rem;
+}
+.main_cake_coupon_exchange .main nav a.active {
+  color: #b89b66;
+}
+.main_cake_coupon_exchange .main nav a.active span {
+  position: relative;
+}
+.main_cake_coupon_exchange .main nav a.active span:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 9px;
+  background: url("../images/company/cakeCouponExchange/card.png") no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  left: -12px;
+  top: 50%;
+  margin-top: -4px;
+}
+.main_cake_coupon_exchange .main ul {
+  padding: 0 0.15rem;
+}
+.main_cake_coupon_exchange .main .p_item {
+  width: 48%;
+  margin-bottom: 0.15rem;
+}
+.main_cake_coupon_exchange .main .p_item:nth-of-type(odd) {
+  float: left;
+}
+.main_cake_coupon_exchange .main .p_item:nth-of-type(even) {
+  float: right;
+}
+.main_cake_coupon_exchange .main .p_item .p_info {
+  height: 0.92rem;
+  text-align: center;
+  padding: 0.12rem 0.1rem 0;
+  position: relative;
+}
+.main_cake_coupon_exchange .main .p_item .name_wrap {
+  height: auto;
+  max-height: 0.36rem;
+  overflow: hidden;
+}
+.main_cake_coupon_exchange .main .p_item .proposal {
+  font-size: 0.09rem;
+}
+.main_cake_coupon_exchange .main .p_item .pro_text {
+  position: absolute;
+  width: 92%;
+  height: 0;
+  padding-top: 23.3%;
+  transform: translateY(-90%);
+  -webkit-transform: translateY(-90%);
+  background: url("../images/company/cakeCouponExchange/pop_bg.png") no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.main_cake_coupon_exchange .main .p_item .pro_text .text {
+  position: absolute;
+  width: 95%;
+  height: 65%;
+  top: 6%;
+  left: 2.8%;
+  font-size: 9px;
+  color: #b89b66;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2;
+}
+.main_cake_coupon_exchange .main .p_item .redeem_now {
+  color: #ff1b00;
+  content: '';
+  position: absolute;
+  width: 1rem;
+  height: 0.24rem;
+  line-height: 0.24rem;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.5rem;
+}
+.main_cake_coupon_exchange .main .bottom_text {
+  overflow: hidden;
+  background: white;
+  padding: 0 0.15rem;
+  margin: auto;
+}
+.main_cake_coupon_exchange .main .bottom_text h4 {
+  color: #3e3e3e;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+}
+.main_cake_coupon_exchange .main .bottom_text p {
+  color: #3e3e3e;
+  line-height: 27px;
+}
+.main_cake_coupon_exchange .main .bottom_text p span {
+  font-weight: bold;
+}
+.main_cake_coupon_exchange .main .bottom_text p:last-child {
+  margin-bottom: 40px;
+}
+.main_cake_coupon_exchange .snowUpgrade {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.main_cake_coupon_exchange .snowUpgrade.ani_list-enter-active,
+.main_cake_coupon_exchange .snowUpgrade.ani_list-leave-active {
+  transition: opacity 0.3s;
+}
+.main_cake_coupon_exchange .snowUpgrade.ani_list-enter-active .outer,
+.main_cake_coupon_exchange .snowUpgrade.ani_list-leave-active .outer {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.main_cake_coupon_exchange .snowUpgrade.ani_list-enter,
+.main_cake_coupon_exchange .snowUpgrade.ani_list-leave-to {
+  opacity: 0;
+}
+.main_cake_coupon_exchange .snowUpgrade.ani_list-enter .outer,
+.main_cake_coupon_exchange .snowUpgrade.ani_list-leave-to .outer {
+  transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+}
+.main_cake_coupon_exchange .snowUpgrade .outer {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  position: absolute;
+  background: #f5f5f5;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  max-height: calc(100% - .3rem);
+  height: 100%;
+  flex-direction: column;
+  color: #af8d60;
+  font-size: 0.12rem;
+}
+.main_cake_coupon_exchange .snowUpgrade .inner {
+  padding: 0 0.2rem 0.06rem;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.main_cake_coupon_exchange .snowUpgrade h3 {
+  font-size: 0.14rem;
+  line-height: 0.32rem;
+  padding-top: 0.06rem;
+  text-align: center;
+}
+.main_cake_coupon_exchange .snowUpgrade .origin_goods_wrap {
+  position: relative;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #9c9c9c;
+}
+.main_cake_coupon_exchange .snowUpgrade .origin_goods_wrap:before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  margin-left: -6px;
+  border-left: 1px solid #9c9c9c;
+  border-top: 1px solid #9c9c9c;
+  background: #f5f5f5;
+  bottom: -6px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.main_cake_coupon_exchange .snowUpgrade ul {
+  margin-top: 0.16rem;
+}
+.main_cake_coupon_exchange .snowUpgrade ul .p_item {
+  width: auto;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(222, 222, 222, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(222, 222, 222, 0.6);
+  margin-bottom: 0.1rem;
+  padding: 0.1rem;
+  border: 1px solid transparent;
+  background: #ffffff;
+}
+.main_cake_coupon_exchange .snowUpgrade ul .p_item.active {
+  border-color: #af8d60;
+}
+.main_cake_coupon_exchange .snowUpgrade ul .p_item:last-of-type {
+  margin-bottom: 0;
+}
+.main_cake_coupon_exchange .snowUpgrade ul .p_item .select_flag {
+  position: absolute;
+  width: 0.32rem;
+  height: 0.32rem;
+  top: 50%;
+  margin-top: -0.16rem;
+  right: 0.1rem;
+  z-index: 2;
+  text-indent: -10000px;
+  overflow: hidden;
+}
+.main_cake_coupon_exchange .snowUpgrade ul .p_item .select_flag:before {
+  content: '';
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url("../images/icons_1.png") no-repeat center;
+  -webkit-background-size: 2rem 2rem;
+  background-size: 2rem 2rem;
+  top: 50%;
+  margin-top: -0.1rem;
+  background-position: -0.6rem -0.6rem;
+  left: 50%;
+  margin-left: -0.1rem;
+}
+.main_cake_coupon_exchange .snowUpgrade ul .p_item .select_flag.active:before {
+  background-position: -0.4rem -0.6rem;
+}
+.main_cake_coupon_exchange .snowUpgrade ul .p_item .img_wrap {
+  width: 0.64rem;
+  height: 0.64rem;
+}
+.main_cake_coupon_exchange .snowUpgrade ul .p_item .goods_info {
+  position: relative;
+  height: 0.64rem;
+  margin-left: 0.8rem;
+}
+.main_cake_coupon_exchange .snowUpgrade ul .p_item .goods_info .goods_name {
+  font-size: 0.12rem;
+  height: 0.2rem;
+}
+.main_cake_coupon_exchange .snowUpgrade ul .p_item .goods_info .price_wrap {
+  position: absolute;
+  bottom: 0.04rem;
+  left: 0;
+}
+.main_cake_coupon_exchange .snowUpgrade ul .p_item .standard_fitting {
+  font-size: 0.1rem;
+  color: #9c9c9c;
+}
+.main_cake_coupon_exchange .snowUpgrade .desc_wrap {
+  border-top: 1px solid #e0dcd1;
+  text-align: center;
+  line-height: 0.2rem;
+  padding-top: 0.06rem;
+}
+.main_cake_coupon_exchange .snowUpgrade .upgrade_info {
+  margin: 0.1rem 0.2rem;
+  color: #3e3e3e;
+  border-top: 1px solid #e0dcd1;
+  padding: 0.06rem 0;
+}
+.main_cake_coupon_exchange .snowUpgrade .btn_wrap {
+  background: #ffffff;
+  border-top: 1px solid #ff4001;
+}
+.main_cake_coupon_exchange .snowUpgrade .btn_wrap button {
+  position: relative;
+  font-size: 0.14rem;
+  width: 50%;
+  text-align: center;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  background: transparent;
+}
+.main_cake_coupon_exchange .snowUpgrade .btn_wrap button:last-of-type {
+  background: #ff4001;
+  color: #ffffff;
+}

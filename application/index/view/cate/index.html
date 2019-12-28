@@ -1,0 +1,185 @@
+﻿    <!DOCTYPE html>
+    <html lang="zh-cn">
+    <head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html">
+        
+                <title>诺心蛋糕官网|诺心LE CAKE—诺心蛋糕网上订购</title>
+        <meta name="Keywords" content="诺心蛋糕官网,诺心, 生日蛋糕订购，芝士蛋糕,慕斯蛋糕,草莓蛋糕，蛋糕网上订购，订蛋糕，网上订蛋糕">
+        <meta name="Description" content="诺心蛋糕官网提供生日蛋糕,巧克力蛋糕,芝士蛋糕,水果蛋糕,慕斯蛋糕,草莓蛋糕订购,蛋糕店已在上海,北京,广州,深圳,天津,杭州,苏州,成都,重庆,宁波,南京开通网上订蛋糕,免费配送到家。">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="shortcut icon" href="__PUBLIC__/../favicon.css">
+        <link rel="stylesheet" href="__PUBLIC__/styles/base-2019060601.css">
+        <link rel="stylesheet" href="__PUBLIC__/styles/widget-2019060601.css">
+        <script>
+            var GlobalConfig = {
+                'baseUrl': 'https://www.lecake.com/',
+                'staticUrl': '//newimgcdn.lapetit.cn/h5/',
+                'cookieDomain': '.lecake.com',
+                'imageRoot': '//imagecdn.lapetit.cn/postsystem/docroot/images',
+                'staticVersions': '2019060601',
+                'site_env': 'prod',
+                'nowTime':1559981316            };
+            var isLecakeCNDomain = false;
+            //用户信息
+            var customerInfo = [];
+            var globalCurrentCity = '漳州市';
+            //某些商品特殊餐具数量
+            var globalSpecialDinnerware = {"105819":"\u542b2\u628a\u9910\u53c9","105822":"\u542b2\u628a\u9910\u53c9","105909":"\u542b2\u628a\u9910\u53c9","105978":"\u542b2\u628a\u9910\u53c9","106041":"\u5404\u542b2\u628a\u9910\u52fa","106032":"\u542b2\u628a\u9910\u52fa","106038":"\u542b2\u628a\u9910\u52fa","106031":"\u542b2\u628a\u9910\u52fa","106035":"\u542b2\u628a\u9910\u52fa","106071":"\u542b2\u628a\u9910\u52fa","106068":"\u542b2\u628a\u9910\u52fa","107135":"\u542b1\u628a\u9910\u53c9"};
+        </script>
+        <script src="__PUBLIC__/scripts/lib/jquery.min.js"></script>
+                    <script src="__PUBLIC__/scripts/lib/vue.min.js"></script>
+                <link href="__PUBLIC__/styles/loginApp-2019060601.css" rel="stylesheet">    </head>
+    <body>
+        <article class="container main_login" id="loginApp">
+    <template>
+        <div class="main">
+            <div class="login_wrap" v-if="currentForm==='login' && !isShowBind">
+
+                <h2 class="clear_fix tab_title" v-if="login.yzmLogin===1">
+                    <a href="javascript:void(0)" class="tab_btn" :class="{active:login.loginType==='mobile'}" @click="login.loginType='mobile'">手机一键登录</a>
+                    <a href="javascript:void(0)" class="tab_btn" :class="{active:login.loginType==='username'}" @click="login.loginType='username'">账号登录</a>
+                </h2>
+
+                <h3 class="bind_title" v-else="">绑定手机号码</h3>
+
+                <div class="register_tips" v-if="login.yzmLogin===1">
+                    <template v-if="login.loginType==='mobile'">
+                        <p>未注册的用户默认直接注册</p>
+                        <p>登录即代表您已同意<a href="javascript:;">《诺心lecake用户服务协议》</a></p>
+                    </template>
+                </div>
+
+                <div class="tab tab_mobile" v-show="login.loginType==='mobile'">
+                    <p class="input_wrap username_wrap">
+                        <input type="tel" maxlength="11" placeholder="请输入手机号" v-model.trim="login.mobile" @input="login.mobileError=''">
+                        <span class="error_message">{{login.mobileError}}</span>
+                    </p>
+                    <p class="input_wrap yzm_wrap" v-if="login.isYzm===1">
+                        <input type="text" maxlength="6" placeholder="请输入验证码" v-model.trim="login.yzm" @input="login.yzmError=''">
+                        <a href="javascript:void(0)" class="captchaWrap flex" @click="getCaptcha">
+                            <img :src="login.captchaImg" alt="点击刷新">
+                            <span class="refresh_btn">换一个</span>
+                        </a>
+                        <span class="error_message" v-show="login.yzmError">{{login.yzmError}}</span>
+                    </p>
+                    <p class="input_wrap yzm_wrap">
+                        <input type="text" maxlength="6" placeholder="请输入短信验证码" v-model.trim="login.code" @input="login.codeError=''">
+                        <button class="code_btn" @click="sendSMS" v-show=" !login.isCodeGetting && login.time == 0 ">
+                            发送验证码
+                        </button>
+                        <button class="code_btn" v-show=" login.isCodeGetting " disabled="">正在发送</button>
+                        <button class="code_btn" disabled="" v-show=" login.time > 0 ">{{login.time}}秒后重试</button>
+                        <span class="error_message">{{login.codeError}}</span>
+                    </p>
+                </div>
+
+                <div class="tab tab_account" v-show="login.loginType==='username'">
+                    <p class="input_wrap username_wrap">
+                        <input type="text" maxlength="50" placeholder="请输入手机号或邮箱" autocomplete="off" v-model.trim="login.username" @input="login.usernameError=''">
+                        <span class="error_message">{{login.usernameError}}</span>
+                    </p>
+                    <p class="input_wrap password_wrap">
+                        <input type="password" maxlength="50" placeholder="请输入密码" v-model.trim="login.password" @input="login.passwordError=''">
+                        <span class="error_message auto_wrap">{{login.passwordError}}</span>
+                    </p>
+                    <p class="input_wrap yzm_wrap" :class="{hide:!login.isNeedCheckYzm}">
+                        <input type="text" maxlength="6" placeholder="请输入验证码" v-model.trim="login.yzm" @click="login.yzmError=''">
+                        <a href="javascript:void(0)" class="captchaWrap" @click="getCaptcha">
+                            <img :src="login.captchaImg" alt="点击刷新">
+                            <span class="refresh_btn">换一个</span>
+                        </a>
+                        <span class="error_message">{{login.yzmError}}</span>
+                    </p>
+                </div>
+
+                <button @click="submitLogin" class="btn" :disabled="login.isFetching">
+                    {{login.yzmLogin===1?login.loginType==='mobile'?'验证并登录':'登录':'立即绑定'}}
+                </button>
+            </div>
+
+            <div class="bind_wrap" v-if="isShowBind">
+                <div class="cover"></div>
+                <div class="inner">
+                    <h2 class="orange">为了您的账号安全，请绑定手机号码</h2>
+                    <p class="input_wrap username_wrap">
+                        <input type="text" maxlength="11" placeholder="手机号码" v-model.trim="bind.mobile" @input="bind.mobileError=''">
+                        <span class="error_message">{{bind.mobileError}}</span>
+                    </p>
+                    <p class="input_wrap yzm_wrap">
+                        <input type="text" maxlength="6" placeholder="请输入验证码" v-model.trim="bind.yzm" @input="bind.yzmError=''">
+                        <a href="javascript:void(0)" class="captchaWrap" @click="getCaptcha">
+                            <img :src="bind.captchaImg" alt="点击刷新">
+                            <span class="refresh_btn">换一个</span>
+                        </a>
+                        <span class="error_message">{{bind.yzmError}}</span>
+                    </p>
+                    <p class="input_wrap yzm_wrap">
+                        <input type="text" maxlength="6" placeholder="短信验证码" v-model.trim="bind.code" @input="bind.codeError=''">
+                        <button class="code_btn" @click="sendSMS" v-show=" !bind.isCodeGetting && bind.time == 0 ">发送验证码
+                        </button>
+                        <button class="code_btn" v-show=" bind.isCodeGetting " disabled="">正在发送</button>
+                        <button class="code_btn" disabled="" v-show=" bind.time > 0 ">{{bind.time}}秒后重试</button>
+                        <span class="error_message">{{bind.codeError}}</span>
+                    </p>
+                    <button @click="submitLogin" class="btn" :disabled="bind.isFetching">验证</button>
+                </div>
+            </div>
+
+            <div class="more_login_type" v-show="login.yzmLogin===1 && !isShowBind">
+                <h3></h3>
+                <div class="type_list">
+                    <a href="javascript:;" class="qq"></a>
+                </div>
+            </div>
+        </div>
+        <transition name="pop">
+            <div class="ui_pop" v-show="showConfirm">
+                <div class="ui_confirm inner">
+                    <div class="text">
+                        <h3>手机号{{currentMobile}}已绑定以下账号，为了您的账户安全请选择一个诺心账户登录,此手机号将与其他账号解绑。</h3>
+                        <h4>若有疑问可联系在线客服4001-578-578。</h4>
+                        <div class="mobile_list">
+                            <a href="javascript:void(0)" v-for="item in mobileList" :class="{active:custID===item.custID}" @click="custID=item.custID;selectedMobile=item.mobile;">{{item.custID}}</a>
+                        </div>
+                    </div>
+                    <div class="btn_wrap clear_fix">
+                        <button class="f_left cancel_btn" @click="showConfirm=false">取消</button>
+                        <button class="f_right ok_btn" @click="unbindMobile">确定</button>
+                    </div>
+                </div>
+            </div>
+        </transition>
+    </template>
+</article>
+<script>
+    var lastUrl = '/h5/customer/stored-card';
+    lastUrl = decodeURIComponent(lastUrl);
+    //账号密码登录错误次数，大于三次后显示图形验证码
+    var loginErrorCount = '0';
+    //是否是第三方登录绑定
+    var isBind = '';
+    //0传随机码，1传图片验证码
+    var isYzm = 0;
+    //默认验证码
+    var defaultYzm = '757404090';
+</script>    <script src="__PUBLIC__/scripts/common/siteList.js"></script>
+        <script src="__PUBLIC__/scripts/common/widget-2019060601.js"></script>
+    <script src="__PUBLIC__/scripts/common/base-2019060601.js"></script>
+        <script src="__PUBLIC__/scripts/app/passport/loginApp-2019060601.js"></script>    <!--HPSTAT start-->
+    <script src="__PUBLIC__/scripts/common/statistics-2019060601.js"></script>
+    <script type="text/javascript">var glbStatConfig={stat_host:"www.lecake.com",click_id: "LDhh.CSR5orS"};</script>
+<script type="text/javascript" src="__PUBLIC__/../stat/mystat-20181029.js"></script>    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?bb88a0ab0bbf902210b249fead665cdf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    </body>
+    </html>

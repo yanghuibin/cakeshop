@@ -1,0 +1,125 @@
+﻿    <!DOCTYPE html>
+    <html lang="zh-cn">
+    <head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html">
+        
+                <title>诺心蛋糕官网|诺心LE CAKE—诺心蛋糕网上订购</title>
+        <meta name="Keywords" content="诺心蛋糕官网,诺心, 生日蛋糕订购，芝士蛋糕,慕斯蛋糕,草莓蛋糕，蛋糕网上订购，订蛋糕，网上订蛋糕">
+        <meta name="Description" content="诺心蛋糕官网提供生日蛋糕,巧克力蛋糕,芝士蛋糕,水果蛋糕,慕斯蛋糕,草莓蛋糕订购,蛋糕店已在上海,北京,广州,深圳,天津,杭州,苏州,成都,重庆,宁波,南京开通网上订蛋糕,免费配送到家。">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="shortcut icon" href="../../favicon.css">
+        <link rel="stylesheet" href="../styles/base-2019060601.css">
+        <link rel="stylesheet" href="../styles/widget-2019060601.css">
+        <script>
+            var GlobalConfig = {
+                'baseUrl': 'https://www.lecake.com/',
+                'staticUrl': '//newimgcdn.lapetit.cn/h5/',
+                'cookieDomain': '.lecake.com',
+                'imageRoot': '//imagecdn.lapetit.cn/postsystem/docroot/images',
+                'staticVersions': '2019060601',
+                'site_env': 'prod',
+                'nowTime':1559981311            };
+            var isLecakeCNDomain = false;
+            //用户信息
+            var customerInfo = [];
+            var globalCurrentCity = '漳州市';
+            //某些商品特殊餐具数量
+            var globalSpecialDinnerware = {"105819":"\u542b2\u628a\u9910\u53c9","105822":"\u542b2\u628a\u9910\u53c9","105909":"\u542b2\u628a\u9910\u53c9","105978":"\u542b2\u628a\u9910\u53c9","106041":"\u5404\u542b2\u628a\u9910\u52fa","106032":"\u542b2\u628a\u9910\u52fa","106038":"\u542b2\u628a\u9910\u52fa","106031":"\u542b2\u628a\u9910\u52fa","106035":"\u542b2\u628a\u9910\u52fa","106071":"\u542b2\u628a\u9910\u52fa","106068":"\u542b2\u628a\u9910\u52fa","107135":"\u542b1\u628a\u9910\u53c9"};
+        </script>
+        <script src="../scripts/lib/jquery.min.js"></script>
+                    <script src="../scripts/lib/vue.min.js"></script>
+                <link href="../styles/customer-2019060601.css" rel="stylesheet">    </head>
+    <body>
+        <article class="container main_customer">
+    <div class="main">
+        <section class="user_profile">
+                            <div class="not_login">
+                    <div class="avatar_wrap">
+                        <img src="../images/customer/avatar.png">
+                    </div>
+                    <div class="login_wrap">
+                        <a href="login.html">登录</a>
+                    </div>
+                </div>
+                    </section>
+        <hr>
+        <section class="orders_module clear_fix">
+            <a href="../../shop/wechat/usercenter/member_order-4.html">
+                待付款
+                            </a>
+            <a href="../../shop/wechat/usercenter/member_order-2.html">待发货</a>
+            <a href="../../shop/wechat/usercenter/member_order-5.html">待收货</a>
+            <a href="../../shop/wechat/usercenter/member_order-1.html">我的订单</a>
+        </section>
+        <hr>
+        <section class="menu_list">
+            <a href="coupons.html" class="coupon_link">优惠券/蛋糕券
+                            </a>
+            <a href="stored-card.html" class="storedCard_link">储值卡、专享兑换券
+                            </a>
+                            <a href="../../i/duihuan/Index.html" class="club_link">Leclub</a>
+                        <hr>
+            <a href="../../shop/wechat/about.html" class="no_icon">关于我们</a>
+            <a href="../../shop/wechat/about_invoice.html" class="no_icon">关于发票</a>
+                    </section>
+                    <section class="hot_line hide">
+                <a href="tel:400-157-8578">客服电话&nbsp;&nbsp;4001 578 578</a>
+            </section>
+                <section class="kefu">
+            <a href="javascript:void(0)" class="customer_btn hide" id="serviceBtn">客服</a>
+        </section>
+    </div>
+        <footer class="global_fix_bottom rose_bottom">
+        <div class="footer_wrap rose_wrap">
+            <nav class="global_footer rose flex ">
+                <a class="flex_item home" href="../index.html" data-statistics="nav_home|首页">首页</a>
+                                    <!--    北京上海，牛奶        -->
+                                            <a class="flex_item milk" href="../../mobile/topic/s2019/5_limited_milk/index.html" data-statistics="nav_milk|牛奶">元气早餐</a>
+                                        <a class="flex_item cake" href="../list.html" data-statistics="nav_cake|蛋糕">生日蛋糕</a>
+                                <a class="flex_item cart" href="../cart.html" data-statistics="nav_cart|购物车">
+                    购物车
+                    <span id="globalCartNum" class="cart_num hide"></span>
+                </a>
+                <a class="flex_item customer active" href="" data-statistics="nav_customer|个人中心">我的诺心</a>
+            </nav>
+        </div>
+    </footer>
+</article>
+<script>
+    $(function () {
+        $('.vip_status').click(function () {
+            if ($(this).find('a').length) {
+                var href = $(this).find('a').attr('href');
+                if (href.indexOf('script') === -1) {
+                    window.location = href;
+                }
+            }
+        });
+        //客服
+        (function () {
+            utils.checkIsMiniProgram(null, function () {
+                $('#serviceBtn').removeClass('hide');
+            });
+        })();
+    });
+</script>    <script src="../scripts/common/siteList.js"></script>
+        <script src="../scripts/common/widget-2019060601.js"></script>
+    <script src="../scripts/common/base-2019060601.js"></script>
+            <!--HPSTAT start-->
+    <script src="../scripts/common/statistics-2019060601.js"></script>
+    <script type="text/javascript">var glbStatConfig={stat_host:"www.lecake.com",click_id: "LDhgzw.IKPVd"};</script>
+<script type="text/javascript" src="../../stat/mystat-20181029.js"></script>    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?bb88a0ab0bbf902210b249fead665cdf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    </body>
+    </html>

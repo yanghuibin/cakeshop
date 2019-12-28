@@ -1,0 +1,35 @@
+﻿@charset "UTF-8";
+.main_goods_comments {
+  background: #ffffff;
+}
+.main_goods_comments .main {
+  margin: 0 0.16rem;
+}
+.main_goods_comments .main .no_content {
+  padding: 1rem 0;
+  text-align: center;
+}
+.main_goods_comments .main .is_fetching {
+  text-align: center;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  -webkit-border-radius: 0.04rem;
+  border-radius: 0.04rem;
+}
+.main_goods_comments .main .is_fetching span {
+  display: inline-block;
+  position: relative;
+  padding-left: 0.2rem;
+}
+.main_goods_comments .main .is_fetching span:before {
+  content: '';
+  position: absolute;
+  width: 0.16rem;
+  height: 0.16rem;
+  left: 0;
+  top: 50%;
+  margin-top: -0.08rem;
+  background: url("../images/loading.gif") no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}

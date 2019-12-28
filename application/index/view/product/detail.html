@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8"/>
+    <title>屿鹿Eulu蛋糕官网_生日蛋糕|水果蛋糕|芝士慕斯蛋糕|巧克力蛋糕 蛋糕店网上订购</title>
+    <meta name="Keywords" content="蛋糕店,生日蛋糕,芝士蛋糕,慕斯蛋糕,水果草莓蛋糕,数字蛋糕,蛋糕网上订购,网上订蛋糕,诺心蛋糕官网"/>
+    <meta name="Description" content="屿鹿Eulu蛋糕官网蛋糕店在线提供蛋糕订购服务,屿鹿Eulu蛋糕系列包括：生日蛋糕,巧克力蛋糕,芝士蛋糕,水果蛋糕,慕斯蛋糕,草莓蛋糕。"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="/favicon.ico?01">
+    <link rel="stylesheet" href="__PUBLIC__/styles/Detail_base_20191002.css">
+    <!--//newimgcdn.lapetit.cn/h5/styles/base.css?v=2019092703-->
+    <link rel="stylesheet" href="//newimgcdn.lapetit.cn/h5/styles/widget.css?v=2019092703">
+    <script>
+        var GlobalConfig = {
+            'baseUrl': 'https://shop.huayishang.net/',
+            'staticUrl': '//newimgcdn.lapetit.cn/h5/',
+            'cookieDomain': '.huayishang.net',
+            'imageRoot': '//imagecdn.lapetit.cn/postsystem/docroot/images',
+            'h5StaticVersion': '2019092703',
+            'site_env': 'prod',
+            'nowTime': 1569785920
+        };
+        var isLecakeCNDomain = false;
+        //用户id
+        var customerId = '';
+        //用户信息
+        var customerInfo = [];
+        var globalCurrentCity = '漳州市';
+        //某些商品特殊餐具数量
+        var globalSpecialDinnerware = {
+            "105819": "\u542b2\u628a\u9910\u53c9",
+            "105822": "\u542b2\u628a\u9910\u53c9",
+            "105909": "\u542b2\u628a\u9910\u53c9",
+            "105978": "\u542b2\u628a\u9910\u53c9",
+            "106041": "\u5404\u542b2\u628a\u9910\u52fa",
+            "106032": "\u542b2\u628a\u9910\u52fa",
+            "106038": "\u542b2\u628a\u9910\u52fa",
+            "106031": "\u542b2\u628a\u9910\u52fa",
+            "106035": "\u542b2\u628a\u9910\u52fa",
+            "106071": "\u542b2\u628a\u9910\u52fa",
+            "106068": "\u542b2\u628a\u9910\u52fa",
+            "107135": "\u542b1\u628a\u9910\u53c9"
+        };
+    </script>
+    <script src="__PUBLIC__/scripts/lib/jquery.min.js"></script>
+    <script src="__PUBLIC__/scripts/lib/vue.min.js"></script>
+    <link href="__PUBLIC__/styles/swiper.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/styles/goodsDetail_20191002.css" rel="stylesheet">
+    <link href="__PUBLIC__/styles/commonts_20191002.css" rel="stylesheet">
+    <link href="__PUBLIC__/styles/commonList_20191002.css" rel="stylesheet">
+
+
+    <style type='text/css'>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            margin: 15px;
+        }
+
+        #top {
+
+            border-bottom: 1px solid #bbb;
+            font-family: 'Microsoft yahei';
+        }
+
+        #top p {
+            margin-bottom: 15px;
+        }
+
+        #top p font {
+            font-size: 14px;
+            color: #000;
+            margin-right: 15px;
+        }
+
+        #top p span {
+            font-size: 14px;
+            color: #666;
+            border: 1px solid #999;
+            display: inline-block;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        #top p span.on {
+            border: 2px solid #f60;
+            padding: 7px;
+            background: url(img/on.png) no-repeat right bottom;
+        }
+
+        #bottom {
+            font-family: 'Microsoft yahei';
+        }
+
+        #bottom p font {
+            color: #f60;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        #bottom p a {
+            font-size: 14px;
+            color: blue;
+        }
+
+        #bottom p a i {
+            margin: 0 5px;
+            color: #90c;
+        }
+
+        #bottom button {
+            font-family: 'Microsoft yahei';
+            margin-top: 20px;
+            font-size: 20px;
+            background: #f60;
+            color: #fff;
+            border: none;
+
+        }
+    </style>
+</head>
+<body>
+
+<article class="container main_goods_detail">
+
+    <div class="main">
+        <!--顶部导航-->
+        <header class="global_fix_top">
+            <div class="header_wrap">
+                <div class="global_header">
+                    <a href="javascript:history.go(-1)" class="header_left header_back_btn"></a>
+                    <nav class="header_nav flex">
+                        <a href="#goodsImg" class="header_nav_item active" data-target="goodsImg">商品</a>
+                        <!--    <a href="javascript:void(0)" class="header_nav_item" data-target="goodsComments2">评价</a>-->
+                        <a href="#goodsDesc" class="header_nav_item" data-target="goodsDesc">详情</a>
+                        <a href="#recommend" class="header_nav_item" data-target="recommend">推荐</a>
+                    </nav>
+                    <a href="/index/index" class="header_right"></a>
+                </div>
+            </div>
+        </header>
+        <!--主图-->
+        <section class="goods_img swiper-container new" id="goodsImg" data-digital="">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="img-responsive" src="{$product_result.product_img}" alt="{$product_result.product_name}">
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-responsive" src="{$product_result.product_img}" alt="{$product_result.product_name}">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+        <!--商品价格，口味等详情-->
+        <section class="goods_detail new" id="selectSpec">
+            <div class="goods_list">
+                <template>
+                    <div class="goods_item">
+                        <div class="goods_title flex">
+                            <h2 class="flex_item">
+                                {$product_result.product_name}
+                            </h2>
+                        </div>
+                        <div class="spec" v-if="!goods.isStockMilk">
+                            <p style="width: auto;min-width: 40%;margin-right: 4px;"
+                               v-if="goods.tasteLabel"
+                               class="taste">
+                                {$product_result.product_title}
+                            </p>
+                            <p v-if="goodsProperty" class="sweet flex">甜度：
+                                <i class="flex_item sweet_level"
+                                   :class="'level_'+goodsProperty.values"></i>
+                            </p>
+                        </div>
+                        <div class="share_wrap" id="goodsShareIcon">
+                            <img src="//newimgcdn.lapetit.cn/h5/images/goods/shareIcons/share_btn_new.png" alt="">
+                            <span>分享</span>
+                        </div>
+                        <div class="price_wrap">
+                            <p class="no_wrap">
+                                <strong class="new_price">￥{{showItem.salePrice }}</strong>
+                                <span class="vip_price orange" v-if="showItem.vipPrice" style="margin-left: 5px;">￥{{showItem.vipPrice }}</span>
+                                <span v-if="showItem.passCardPrice" class="pass_card_price">
+                            ￥{{showItem.passCardPrice}}
+                        </span>
+                                <span v-else-if="showItem.preferentialPrice || isForceShowMarkup" class="markup_price">
+                            ￥{{showItem.preferentialPrice}}
+                        </span>
+                                <span v-else-if="showItem.marketPrice && showItem.salePrice !== showItem.marketPrice"
+                                      class="old_price">
+                            ￥{{showItem.marketPrice}}
+                        </span>
+                            </p>
+                        </div>
+                    </div>
+                </template>
+
+
+                <!--
+                <p class="logistics_label" v-if="goods.thirdPartyDelivery==1">本商品由第三方物流发货，物流信息详见订单详情</p>
+                <a href="#" class="aha_entrance">
+                    <div class="div_img auto_height">
+                        <img src="//newimgcdn.lapetit.cn/h5/images/aha/aha_link.png?01" class="auto_pos">
+                        <span class="desc_text">开通仅¥99 预计可省¥336</span>
+                    </div>
+                </a>
+
+                <template>
+                    <div class="spec_selected_show" id="showSpecPop">
+                        <p class="split"></p>
+                        <div class="content clear_fix">
+                            <p class="f_left">已选规格: {{showItem.displaySpec}}</p>
+                        </div>
+                    </div>
+                </template>
+
+
+            -->
+
+
+                <div id="wrap">
+                    <div id="top">
+
+                        <p id='category_name' hidden>
+                            <font>奶油类型</font>
+                            <span data-aid="1">动物奶油</span>
+                            <span data-aid="2">植物奶油</span>
+                        </p>
+
+                        <p id='product_size'>
+                            <font>尺　　寸</font>
+                            <span data-aid="1" style="margin: 5px;">6寸奶油</span>
+                            <span data-aid="2"style="margin: 5px;">8寸奶油</span>
+                            <span style="margin: 5px;">10寸奶油</span>
+                            <span style="margin: 5px;">12寸奶油</span>
+                            <span style="margin: 5px;">其他尺寸请留言</span>
+
+                        </p>
+
+
+                    </div>
+                    <div id="bottom">
+                        <p>价格： <font>￥ <span id='price'>{$product_result.product_price}</span>.00</font></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--温馨提示-->
+
+        <!-- 促销-->
+        <!--
+        <div class="promotion new" v-if="showPromotion.length" v-if="!isGroupBuy" id="promotions">
+            <template>
+                <div class="inner" @click="isShowPromotionPop=true">
+                    <strong class="pro_title">促销</strong>
+                    <div class="content">
+                        <p v-for="promotion of showPromotion">
+                            <b class="pro_type" v-if="promotion.type==='ONLY_SHOW'">{{promotion.displayType|promotionType}}</b>
+                            <b class="pro_type" v-else>{{promotion.type|promotionType}}</b>
+                            <span class="pro_tag">{{promotion.tag}}</span>
+                        </p>
+                    </div>
+                </div>
+
+                <transition name="promotion_pop">
+                    <div class="promotion_pop" v-if="isShowPromotionPop" @click="isShowPromotionPop=false">
+                        <div class="pop_inner" @click.stop="">
+                            <div class="text_wrap">
+                                <div v-if="showPromotion.length > 0" v-for="promotion of showPromotion" class="pro_item">
+                                    <h3>
+                                        <b class="pro_type"
+                                           v-if="promotion.type==='ONLY_SHOW'">{{promotion.displayType|promotionType}}</b>
+                                        <b class="pro_type" v-else>{{promotion.type|promotionType}}</b>
+                                        {{promotion.tag}}
+                                    </h3>
+                                    <p>{{promotion.brief}}</p>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="close_btn" @click="isShowPromotionPop=false">关闭</a>
+                        </div>
+                    </div>
+                </transition>
+
+            </template>
+        </div>
+-->
+
+
+        <!-- 加价购 -->
+        <!--
+        <div class="group_list_wrap" id="groupListWrap">
+            <template>
+                <section class="group_list_package"
+                         v-if="groupListPackage.length">
+                    <div class="division">
+                        <h2>专属欢乐  为你点亮</h2>
+                    </div>
+                    <ul>
+                        <li v-for="item of groupListPackage" @click="item.checked=!item.checked"
+                            :class="{active:item.checked}">
+                            <div class="img_wrap">
+                                <strong v-if="item.preferentialLabel">{{item.preferentialLabel}}</strong>
+                                <img src="item.goodsMainPic" :alt="item.goodsName">
+                            </div>
+                            <h3 class="no_wrap">{{item.goodsName}}</h3>
+                            <h4>
+                                <b :class="{orange:item.preferentialPriceRed}">￥{{item.preferentialPrice}}</b>
+                                <b class="old_price"
+                                   v-if="item.preferentialPrice!=item.marketPrice">￥{{item.marketPrice}}</b>
+                                <i></i>
+                            </h4>
+                        </li>
+                    </ul>
+                </section>
+                <section class="group_list"
+                         :class="{sp:isDoubleList}"
+                         v-if="groupList.length">
+                    <div class="division">
+                        <h2>更多心礼  惠选尊享</h2>
+                    </div>
+                    <ul>
+                        <li v-for="item of groupList" @click="item.checked=!item.checked"
+                            :class="{active:item.checked}">
+                            <div class="img_wrap">
+                                <strong v-if="item.preferentialLabel">{{item.preferentialLabel}}</strong>
+                                <img src="item.goodsMainPic" :alt="item.goodsName">
+                            </div>
+                            <h3 class="no_wrap">{{item.goodsName}}</h3>
+                            <h4>
+                                <b :class="{orange:item.preferentialPriceRed}">￥{{item.preferentialPrice}}</b>
+                                <b class="old_price"
+                                   v-if="item.preferentialPrice!=item.marketPrice">￥{{item.marketPrice}}</b>
+                                <i></i>
+                            </h4>
+                        </li>
+                    </ul>
+                </section>
+                <div class="result_wrap sp" v-if="checkedGoodsList.length">
+                    <h4>已选择<strong class="orange">{{checkedGoodsList.length}}</strong>个组合商品</h4>
+                    <div class="selected_list">
+                        <div class="div_img" v-for="item of checkedGoodsList">
+                            <img src="item.goodsMainPic" :alt="item.goodsName">
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+        -->
+        <!--评论展示-静态-->
+        <div class="desc_col goods_comments comments_example" id="goodsComments2" v-if="commentList.length">
+            <template>
+                <div class="inner">
+                    <h2 :class="{noArrow:!hasMore}">
+                        <span>用户评论</span>
+                        <a v-if="hasMore" href="/h5/comments?uid=110042">看看大家怎么说</a>
+                    </h2>
+
+                    <div class="comments_item" v-for="item of commentList">
+                        <div class="comment_title">
+                            <div class="avatar_wrap">
+                                <img v-if="item.avatar" class="avatar" src="item.avatar">
+                                <img v-else class="avatar" src="//newimgcdn.lapetit.cn/h5/images/goods/avatar.png">
+                            </div>
+                            <span>{{item.creator}}</span>
+                            <span>{{item.displaySpec}}</span>
+                            <span class="f_right">{{item.createTime}}</span>
+                        </div>
+                        <div class="comment_content" v-html="item.content"></div>
+                        <div class="reply" v-if="item.reply">
+                            <h4 class="clear_fix">
+                                <span class="f_left">[ 小诺回复 ]</span>
+                                <span class="f_right" style="color: #949494">{{item.replyTime.substring(0, 10)}}</span>
+                            </h4>
+                            <p class="reply_content">{{item.reply}}</p>
+                        </div>
+                        <div class="upload_wrap commented clear_fix" v-if="item.imgList && item.imgList.length">
+                            <div class="upload_item" v-for="imgItem of item.imgList">
+                                <div class="img_wrap">
+                                    <img src="imgItem.thumbnail_img" data-src="imgItem.original_img">
+                                </div>
+                                <div class="show_wrap"><a href="javascript:void(0)" class="upload_show"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+        <!--商品详情图-->
+        <section class="goods_desc" id="goodsDesc">
+            {$product_result.product_description}
+        </section>
+        <!--吐司-->
+
+        <!--底部的商品评论-->
+        <div class="desc_col goods_comments hide" id="goodsComments" v-if="commentList.length">
+            <div class="inner">
+                <template>
+                    <h2 class="noArrow"><span>用户评论</span></h2>
+
+                    <div class="comments_item" v-for="item of commentList">
+                        <div class="comment_title">
+                            <div class="avatar_wrap">
+                                <img v-if="item.avatar" class="avatar" src="item.avatar">
+                                <img v-else class="avatar" src="//newimgcdn.lapetit.cn/h5/images/goods/avatar.png">
+                            </div>
+                            <span>{{item.creator}}</span>
+                            <span>{{item.displaySpec}}</span>
+                            <span class="f_right">{{item.createTime}}</span>
+                        </div>
+                        <div class="comment_content" v-html="item.content"></div>
+                        <div class="reply" v-if="item.reply">
+                            <h4 class="clear_fix">
+                                <span class="f_left">[ 小诺回复 ]</span>
+                                <span class="f_right" style="color: #949494">{{item.replyTime.substring(0, 10)}}</span>
+                            </h4>
+                            <p class="reply_content">{{item.reply}}</p>
+                        </div>
+                        <div class="upload_wrap commented clear_fix" v-if="item.imgList && item.imgList.length">
+                            <div class="upload_item" v-for="imgItem of item.imgList">
+                                <div class="img_wrap">
+                                    <img src="imgItem.thumbnail_img" data-src="imgItem.original_img">
+                                </div>
+                                <div class="show_wrap"><a href="javascript:void(0)" class="upload_show"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/h5/comments?uid=110042" class="more_comments">更多评论</a>
+                </template>
+            </div>
+        </div>
+        <section class="recommend" id="recommend">
+            <div class="division">
+                <h2>推荐商品</h2>
+                <h3>Sincerely Recommend</h3>
+            </div>
+
+            <ul class="p_list clear_fix lazy_load_wrap ">
+                {volist id="recommend_result" name="recommend_result"}
+                <li class="p_item no_height" data-id="102183">
+                    <a class="auto_height"
+                       href="http://shop.huayishang.net/index/detail/index/product_id/{$recommend_result.product_id}.html"
+                       data-statistics="{$recommend_result.product_name}"
+                       data-clickstr="Sm7nOKEWCX2lA1-oAWkWQqhp6XclA16lC1Ag6a3bNKto6XcWH27aC4xCPLR7GH7X6WkWRLBZQW6uA0kWR4ZhNG6uAHIqCHQsBHYmA1AkBrB">
+                        <div class="div_img auto_pos">
+                            <img class="lazy"
+                                 src="{$recommend_result.product_img}"
+                                 data-original="{$recommend_result.product_img}"><!-- 这里没有解决懒加载的问题-->
+                        </div>
+                    </a>
+                    <div class="p_info ">
+                        <div class="name_wrap">
+                            <h3 class="p_name auto_wrap">{$recommend_result.product_name}</h3>
+                            <h4 class="p_tag ">
+                            </h4>
+                            <div class="recommend_reason">懂得营造浪漫氛围的蛋糕</div>
+                        </div>
+                        <div class="price_wrap">
+                            <p class="new_price">
+                                <small>¥</small>
+                                {$recommend_result.product_price}
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                {/volist}
+            </ul>
+        </section>
+    </div>
+
+    <!-- 底部button-->
+    <footer class="global_fix_bottom new">
+        <div class="footer_wrap">
+            <nav class="global_footer clear_fix">
+                <a href="tel:18959607774" class="customer_btn hide" id="serviceBtn">客服</a>
+                <a class="link_home" href="{:url('index/index')}">
+                    首页
+                </a>
+                <!--
+                <a class="card_btn" href="#">
+                    购物车
+                    <span id="globalCartNum" class="cart_num hide"></span>
+                </a>
+                -->
+                <button class="add_cart" id="addCard">
+                    加入购物车
+                </button>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- 分享提示框-->
+    <div class="share_wrapper" id="share">
+        <div class="icon_wrap data_wechat" data-browser="wechat">
+            <img src="{$product_result.product_img}" alt="{$product_result.product_name}">
+        </div>
+    </div>
+    <!--规格，促销，提示弹窗-->
+    <div class="pop_wrapper_mask"></div>
+    <div class="pop_wrapper_inner new" id="goodsSpec">
+        <span class="close" id="close"></span>
+        <div class="content_spec">
+            <div class="header_goodsInfo">
+                <div class="goods_img">
+                    <img id="happycakeReviewImg" src="{$product_result.product_img}" alt="{$product_result.product_title}">
+                </div>
+                <div class="goods_name">
+                    <p class="name">{$product_result.product_name}</p>
+                    <p class="price">
+                        <span>￥</span>{{currentItem.salePrice}}
+                        <span v-if="currentItem.preferentialPrice" class="markup_price">
+                            ￥{{currentItem.preferentialPrice}}
+                        </span>
+                        <span class="vip_price orange" v-else-if="currentItem.vipPrice" style="margin-left: 5px;">￥{{currentItem.vipPrice}}</span>
+                    </p>
+                </div>
+            </div>
+            <div class="scroll_wrap" id="scrollWrap">
+                <p v-if="goods.isNumberCake" class="invoiceNotice orange hide">
+                    即日起至2018年12月30日，购买多个享优惠：2个336元、3个468元、
+                    4个598元、5个728元，购买6个及以上享优惠价145元/个
+                </p>
+                <div class="goods_switch clear_fix">
+                    <p v-if="!goods.isNumberCake" class="notice">建议食用人数</p>
+                    <a v-if="goods.isNumberCake" href="javascript:void(0)"
+                       v-for="(item,index) of specList"
+                       class="switch_item num"
+                       :class="{active:parseInt(item.postId) === selectedGoodsId}"
+                       @click="selectItem(item.postId,index,goods.isConstellation,item.title)">
+                        <strong v-if="goods.isConstellation">{{item.title}}</strong>
+                        <strong class="heartCake" v-else-if="item.title.indexOf('怦然心动')>-1">怦然心动</strong>
+                        <strong v-else>{{index}}</strong>
+                    </a>
+                    <a v-if="!goods.isNumberCake" href="javascript:void(0)"
+                       v-for="item of specList"
+                       class="switch_item"
+                       :class="{active:parseInt(item.postId) === selectedGoodsId,bread:goods.isMainProduct==1,vip_flag_small:item.vipPrice>0}"
+                       @click="selectItem(item.postId)">
+                        <strong>{{item.displaySpec}}</strong>
+                    </a>
+                </div>
+                <div class="goods_list">
+                    <div class="goods_item">
+
+
+                        <div class="spec clear_fix     "
+                             v-if="currentItem.postId!=108763">
+                            <p v-if="currentItem.weight>0" class="weight icon">
+                                {{specPrefixText}}约{{currentItem.weight | len}}g
+                            </p>
+                            <p v-if="currentItem.length && (currentItem.width || currentItem.height)" class="size icon">
+                                {{specPrefixText}}约<span v-if="currentItem.length&&currentItem.length>0">{{currentItem.length | len}}</span>
+                                <span v-if="currentItem.width&&currentItem.width>0">* {{currentItem.width | len}}</span>
+                                <span v-if="currentItem.height&&currentItem.height>0">* {{currentItem.height | len}}</span>cm
+                            </p>
+                            <p v-if="currentItem.dinnerware || currentItem.specialDinnerware" class="tableware icon">
+        <span v-if="currentItem.specialDinnerware">
+            {{currentItem.specialDinnerware}}
+        </span>
+                                <span v-else>含{{currentItem.dinnerware | len}}套餐具</span>
+                            </p>
+                        </div>
+
+                        <!--重庆站套餐-->
+
+                        <!--喵叽叽-->
+
+
+                        <template v-if="currentItem.postId==108763">
+                            <div class="spec clear_fix" style="padding: 14px 0;border-bottom:1px solid #d1c6af;">
+                                <p style="width: 100%;text-align: center;">雪域牛乳芝士蛋糕</p><br>
+                                <p class="weight icon" style="width: 24%;">约450g</p>
+                                <p class="size icon" style="width: 34%;">约13*13*4cm</p>
+                                <p class="tableware icon" style="width: 24%;"><span>含5套餐具</span></p>
+                            </div>
+                            <div class="spec clear_fix" style="padding: 14px 0;border-bottom:1px solid #d1c6af;">
+                                <p style="width: 100%;text-align: center;">千层蝴蝶酥·For Me（原味）</p><br>
+                                <p class="weight icon" style="width: 24%;">约80g</p>
+                                <p class="size icon" style="width: 34%;">约3*4*2cm</p>
+                            </div>
+                            <p></p>
+                            <div class="spec clear_fix" style="padding: 14px 0;">
+                                <p style="width: 100%;text-align: center;">核桃曲奇礼盒（迷迭紫）</p><br>
+                                <p class="weight icon" style="width: 24%;">约270g</p>
+                                <p class="size icon" style="width: 34%;">约11*11*8cm</p>
+                            </div>
+                        </template>
+                        <template v-if="currentItem.postId==107180">
+                            <div class="spec clear_fix">
+                                <p style="width: 9%">单盒</p>
+                                <p class="size icon" style="width: 29%;">约20x7x5cm</p>
+                                <p class="weight icon" style="width: 18%;">约60g</p>
+                                <p class="sweet" style="width: 22%">
+                                    甜度：
+                                    <i class="sweet_level level_2"></i>
+                                </p>
+                                <p style="width: 22%;">3盒(36片装)</p>
+                            </div>
+                        </template>
+
+                        <!--超值套餐-->
+                        <!--经典套餐-->
+                        <!--尊享套餐-->
+                        <!--超值套餐单独买-->
+                        <template v-if="currentItem.postId==106883">
+                            <div class="spec clear_fix"
+                                 style="padding: 14px 0;text-align: center;border-bottom:1px solid #e0e0e0;">
+                                <p style="width: 100%;">原味匠心吐司</p>
+                                <span class="size no_wrap"
+                                      style="width: 31%;margin-right:10px;">约10.5*11.0*9.5cm/个</span>
+                                <span class="weight" style="width: 20%;margin-right:10px;">约240g/个</span>
+                                <span style="width: 20%;">3个(半条装)</span>
+                            </div>
+                            <div class="spec clear_fix" style="padding: 14px 0;text-align: center;">
+                                <p style="width:100%;">随机口味</p>
+                                <span class="size no_wrap" style="width: 31%;margin-right:10px;">约10.5*10.5*9.5cm</span>
+                                <span class="weight" style="width: 20%;margin-right:10px;">约250g-300g</span>
+                                <span style="width: 20%;margin-right:10px;">1个(半条装)</span>
+                            </div>
+                        </template>
+                        <!--经典套餐单独买-->
+                        <template v-if="currentItem.postId==106880">
+                            <div class="spec clear_fix"
+                                 style="padding: 14px 0;text-align: center;border-bottom:1px solid #e0e0e0;">
+                                <p style="width: 100%;text-indent: 0;">原味匠心吐司</p>
+                                <span class="size no_wrap"
+                                      style="width: 30%;margin-right:10px;">约10.5*11.0*9.5cm/个</span>
+                                <span class="weight" style="width: 20%;margin-right:10px;">约240g/个</span>
+                                <span style="width: 20%;margin-right:10px;">1个（半条装）</span>
+                            </div>
+                            <div class="spec clear_fix"
+                                 style="padding: 14px 0;text-align: center;border-bottom:1px solid #e0e0e0;">
+                                <p style="width: 100%;text-indent: 0;">巧克力吐司</p>
+                                <span class="size no_wrap"
+                                      style="width: 30%;margin-right:10px;">约10.5*11.0*9.5cm/个</span>
+                                <span class="weight" style="width: 20%;margin-right:10px;">约300g/个</span>
+                                <span style="width: 20%;margin-right:10px;">1个（半条装）</span>
+                            </div>
+                            <div class="spec clear_fix"
+                                 style="padding: 14px 0;text-align: center;border-bottom:1px solid #e0e0e0;">
+                                <p style="width: 100%;text-indent: 0;">彩虹吐司</p>
+                                <span class="size no_wrap"
+                                      style="width: 30%;margin-right:10px;">约10.5*11.0*9.5cm/个</span>
+                                <span class="weight" style="width: 20%;margin-right:10px;">约250g/个</span>
+                                <span style="width: 20%;margin-right:10px;">1个（半条装）</span>
+                            </div>
+                            <div class="spec clear_fix" style="padding: 14px 0;text-align: center;">
+                                <p style="width: 100%;text-indent: 0;">芝麻吐司</p>
+                                <span class="size no_wrap"
+                                      style="width: 30%;margin-right:10px;">约10.5*10.5*9.5cm/个</span>
+                                <span class="weight" style="width: 20%;margin-right:10px;">约250g/个</span>
+                                <span style="width: 20%;margin-right:10px;">1个（半条装）</span>
+                            </div>
+                        </template>
+                        <!--尊享套餐单独买-->
+                        <template v-if="currentItem.postId==106876">
+                            <div class="spec clear_fix"
+                                 style="padding: 14px 0;text-align: center;border-bottom:1px solid #e0e0e0;">
+                                <p style="width: 100%;text-indent: 0;">原味匠心吐司</p>
+                                <span class="size no_wrap"
+                                      style="width: 30%;margin-right:10px;">约10.5*11.0*19cm/个</span>
+                                <span class="weight" style="width: 20%;margin-right:10px;">约485g/个</span>
+                                <span style="width: 20%;margin-right:10px;">1个（整条装）</span>
+                            </div>
+                            <div class="spec clear_fix"
+                                 style="padding: 14px 0;text-align: center;border-bottom:1px solid #e0e0e0;">
+                                <p style="width: 100%;text-indent: 0;">巧克力吐司</p>
+                                <span class="size no_wrap"
+                                      style="width: 30%;margin-right:10px;">约10.5*11.0*19cm/个</span>
+                                <span class="weight" style="width: 20%;margin-right:10px;">约600g/个</span>
+                                <span style="width: 20%;margin-right:10px;">1个（整条装）</span>
+                            </div>
+                            <div class="spec clear_fix"
+                                 style="padding: 14px 0;text-align: center;border-bottom:1px solid #e0e0e0;">
+                                <p style="width: 100%;text-indent: 0;">彩虹吐司</p>
+                                <span class="size no_wrap"
+                                      style="width: 30%;margin-right:10px;">约10.5*11.0*19cm/个</span>
+                                <span class="weight" style="width: 20%;margin-right:10px;">约500g/个</span>
+                                <span style="width: 20%;margin-right:10px;">1个（整条装）</span>
+                            </div>
+                            <div class="spec clear_fix" style="padding: 14px 0;text-align: center;">
+                                <p style="width: 100%;text-indent: 0;">芝麻吐司</p>
+                                <span class="size no_wrap"
+                                      style="width: 30%;margin-right:10px;">约10.5*10.5*19cm/个</span>
+                                <span class="weight" style="width: 20%;margin-right:10px;">约500g/个</span>
+                                <span style="width: 20%;margin-right:10px;">1个（整条装）</span>
+                            </div>
+                        </template>
+
+                    </div>
+                </div>
+                <p class="split"></p>
+                <!--加价购-->
+                <section v-if="groupListCheckedGoodsList.length" class="group_list_checked_goods_list">
+                    <h4>已选择<strong class="orange">{{groupListCheckedGoodsList.length}}</strong>个组合商品</h4>
+                    <div class="selected_list">
+                        <div class="div_img" v-for="item of groupListCheckedGoodsList">
+                            <img src="item.goodsMainPic" :alt="item.goodsName">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="btn_wrap flex">
+                <button class="buyFlag flex_item btn_hole" id="bugFlg">立即购买</button>
+                <button class="addCart flex_item btn_solid" id="add">加入购物车</button>
+            </div>
+        </div>
+        <div class="content_invoice hide">
+            <div v-if="promotionList.length > 0" v-for="item of promotionList" class="invoice_item orange">
+                <h3>{{item.tag}}</h3>
+                <p>{{item.brief}}</p>
+            </div>
+        </div>
+        <div class="content_message hide">
+            <div class="message_item">
+                <h3 class="audio">可录音</h3>
+                <p>提交订单完成后，可添加录音，蛋糕送到后，扫描盒子上的二维码，即可听到录音。</p>
+            </div>
+            <div class="message_item">
+                <h3 class="deliver">可录音</h3>
+                <p>提交订单完成后，可添加录音，蛋糕送到后，扫描盒子上的二维码，即可听到录音。</p>
+            </div>
+            <div class="message_item">
+                <h3 class="card">可录音</h3>
+                <p>提交订单完成后，可添加录音，蛋糕送到后，扫描盒子上的二维码，即可听到录音。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 雪域升级弹窗 -->
+
+</article>
+<!-- 测试　-->
+<script type="text/javascript">
+
+
+</script>
+<script>
+    //价格json
+    var sys_item={
+        "mktprice":"13.00",
+        "price":"6.80",
+        "sys_attrprice":{"3_13":{"price":"6.80","mktprice":"13.00"},"3_14":{"price":"7.80","mktprice":"14.00"},"3_16":{"price":"8.80","mktprice":"15.00"},"3_17":{"price":"9.80","mktprice":"16.00"},"4_13":{"price":"6.80","mktprice":"13.00"},"4_14":{"price":"8.88","mktprice":"14.00"},"4_16":{"price":"8.80","mktprice":"15.00"},"4_17":{"price":"9.80","mktprice":"16.00"},"8_13":{"price":"6.80","mktprice":"13.00"},"8_14":{"price":"7.80","mktprice":"1400"},"8_16":{"price":"8.80","mktprice":"15.00"},"8_17":{"price":"9.80","mktprice":"16.00"},"9_13":{"price":"6.80","mktprice":"13.00"},"9_14":{"price":"7.80","mktprice":"14.00"},"9_16":{"price":"8.80","mktprice":"15.00"},"9_17":{"price":"9.80","mktprice":"16.00"},"10_13":{"price":"6.80","mktprice":"13.00"},"10_14":{"price":"7.80","mktprice":"14.00"},"10_16":{"price":"8.80","mktprice":"15.00"},"10_17":{"price":"9.80","mktprice":"16.00"},"12_13":{"price":"6.80","mktprice":"13.00"},"12_14":{"price":"7.80","mktprice":"14.00"},"12_16":{"price":"8.80","mktprice":"15.00"},"12_17":{"price":"9.80","mktprice":"16.00"}}};
+
+
+    //商品规格选择
+    $(function(){
+        $(".category_name").each(function(){
+            var i=$(this);
+            var p=i.find("ul>li");
+            p.click(function(){
+                if(!!$(this).hasClass("selected")){
+                    $(this).removeClass("selected");
+                    i.removeAttr("data-attrval");
+                }else{
+                    $(this).addClass("selected").siblings("li").removeClass("selected");
+                    i.attr("data-attrval",$(this).attr("data-aid"))
+                }
+                getattrprice() //输出价格
+            })
+        })
+
+        //获取对应属性的价格
+        function getattrprice(){
+            var defaultstats=true;
+            var _val='';
+            var _resp={
+                mktprice:".sys_item_mktprice",
+                price:".sys_item_price"
+            }  //输出对应的class
+            $(".sys_item_spec .sys_item_specpara").each(function(){
+                var i=$(this);
+                var v=i.attr("data-attrval");
+                if(!v){
+                    defaultstats=false;
+                }else{
+                    _val+=_val!=""?"_":"";
+                    _val+=v;
+                }
+            })
+            if(!!defaultstats){
+                _mktprice=sys_item['sys_attrprice'][_val]['mktprice'];
+                _price=sys_item['sys_attrprice'][_val]['price'];
+            }else{
+                _mktprice=sys_item['mktprice'];
+                _price=sys_item['price'];
+            }
+            //输出价格
+            $(_resp.mktprice).text(_mktprice);  ///其中的math.round为截取小数点位数
+            $(_resp.price).text(_price);
+        }
+    })
+</script>
+
+<!--
+<script src="//newimgcdn.lapetit.cn/h5/scripts/common/siteList.js?01"></script>
+<script src="//newimgcdn.lapetit.cn/h5/scripts/common/widget.js?v=2019092703"></script>
+<script src="//newimgcdn.lapetit.cn/h5/scripts/common/base.js?v=2019092703"></script>
+<script src="//newimgcdn.lapetit.cn/h5/scripts/lib/swiper.jquery.min.js"></script>
+<script src="__PUBLIC__/scripts/app/goods/goodsDetail-2019060601.js?"></script>
+<script src="//newimgcdn.lapetit.cn/h5/scripts/app/goods/share.js?v=2019092703"></script>
+<script src="//newimgcdn.lapetit.cn/h5/scripts/lib/imageShow.js"></script>
+<script src="//newimgcdn.lapetit.cn/h5/scripts/app/goods/goodsComments.js?v=2019092703"></script>
+<script src="//newimgcdn.lapetit.cn/h5/scripts/lib/jquery.lazyload.min.js"></script>
+<script src="//newimgcdn.lapetit.cn/h5/scripts/app/commonList.js?v=2019092703"></script>
+<script src="//newimgcdn.lapetit.cn/h5/scripts/common/statistics.js?v=2019092703"></script>
+<script src="__PUBLIC__/scripts/app/goods/goodsDetail-2019060601.js"></script>
+
+-->
+<script src="__PUBLIC__/scripts/common/siteList.js"></script>
+
+<script src="__PUBLIC__/scripts/common/widget-2019060601.js"></script>
+
+<script src="__PUBLIC__/scripts/common/base-2019060601.js"></script>
+<script src="__PUBLIC__/scripts/lib/swiper.jquery.min.js"></script>
+<script src="__PUBLIC__/scripts/app/goods/share-2019060601.js"></script>
+<script src="__PUBLIC__/scripts/lib/imageShow.js"></script>
+<script src="__PUBLIC__/scripts/app/goods/goodsComments-2019060601.js"></script>
+<script src="__PUBLIC__/scripts/lib/jquery.lazyload.min.js"></script>
+<script src="__PUBLIC__/scripts/app/commonList.js"></script>
+<script src="__PUBLIC__/scripts/common/statistics-2019060601.js"></script>
+
+
+<script type="text/javascript">var glbStatConfig = {stat_host: "www.lecake.com", click_id: "LN26E21tZapr"};</script>
+<script type="text/javascript" src="//newimgcdn.lapetit.cn/stat/mystat.js?v=20190927"></script>
+<script type="text/javascript" src="__PUBLIC__/scripts/common/mystat.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,389 @@
+﻿@charset "UTF-8";
+.main_customer {
+  background: #ffffff;
+  font-size: 0.11rem;
+}
+.main_customer .main hr {
+  background: #d1c6af;
+}
+.main_customer .main .user_profile .avatar_wrap img {
+  width: 0.55rem;
+  height: 0.55rem;
+}
+.main_customer .main .user_profile .not_login {
+  text-align: center;
+  background: #f4f4f4;
+  padding: 0.15rem 0.14rem 0.1rem;
+}
+.main_customer .main .user_profile .not_login .login_wrap {
+  padding: 0.1rem 0 0.12rem;
+}
+.main_customer .main .user_profile .not_login .login_wrap a {
+  display: block;
+  margin: auto;
+  width: 0.6rem;
+  height: 0.24rem;
+  line-height: 0.24rem;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #a38d6b;
+  color: #ffffff;
+  text-align: center;
+}
+.main_customer .main .user_profile .is_login {
+  padding: 0.3rem 0.2rem 0.24rem;
+  position: relative;
+  background: url("../images/customer/index/bg_2.png") repeat-y top center;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.main_customer .main .user_profile .is_login .top {
+  padding-left: 13%;
+}
+.main_customer .main .user_profile .is_login .top .avatar_wrap {
+  float: left;
+}
+.main_customer .main .user_profile .is_login .top .info {
+  float: left;
+  margin-left: 0.12rem;
+}
+.main_customer .main .user_profile .is_login .top .info h3 {
+  padding: 0.06rem 0 0.02rem;
+}
+.main_customer .main .user_profile .is_login .top .info h3 span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main_customer .main .user_profile .is_login .top .info h3 .name {
+  font-size: 0.11rem;
+  font-weight: bold;
+}
+.main_customer .main .user_profile .is_login .top .info h3 .level {
+  padding: 1px 4px;
+  margin-left: 0.1rem;
+  line-height: normal;
+  font-size: 9px;
+  color: #ffffff;
+  background: #a38d6b;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.main_customer .main .user_profile .is_login .top .info h3 .points {
+  margin-left: 0.1rem;
+}
+.main_customer .main .user_profile .is_login .vip_status {
+  cursor: pointer;
+  margin-top: 0.15rem;
+  position: relative;
+}
+.main_customer .main .user_profile .is_login .vip_status .wrap {
+  box-shadow: 0 3px 9.7px 0.21px rgba(17, 16, 15, 0.15);
+  -webkit-box-shadow: 0 3px 9.7px 0.21px rgba(17, 16, 15, 0.15);
+  background: #ffffff;
+  padding: 0.1rem 0.08rem;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-border-radius: 0.08rem;
+  border-radius: 0.08rem;
+}
+.main_customer .main .user_profile .is_login .vip_status .wrap .info {
+  justify-content: space-between;
+  align-items: center;
+}
+.main_customer .main .user_profile .is_login.is_vip_not_active .info h3 .points {
+  display: none;
+}
+.main_customer .main .user_profile .is_login.is_vip_not_active .info h4 {
+  margin-top: 0.1rem;
+}
+.main_customer .main .user_profile .is_login.is_vip_not_active .info h4 a {
+  color: #a38d6b;
+  display: inline-block;
+  margin-left: 0.15rem;
+}
+.main_customer .main .user_profile .is_login.is_vip_not_active .bottom {
+  display: block;
+  position: relative;
+}
+.main_customer .main .user_profile .is_login.is_vip_not_active .bottom .info {
+  width: 65%;
+  position: absolute;
+  left: 50%;
+  margin-left: -26%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #ffffff;
+}
+.main_customer .main .user_profile .is_login.is_vip_not_active .bottom .info h3:nth-of-type(1) span {
+  display: block;
+}
+.main_customer .main .user_profile .is_login.is_vip_not_active .bottom .info h3:nth-of-type(1) span:nth-of-type(1) {
+  font-size: 0.13rem;
+}
+.main_customer .main .user_profile .is_login.is_vip_not_active .bottom .info h3:nth-of-type(1) span:nth-of-type(2) {
+  font-size: 0.1rem;
+}
+.main_customer .main .user_profile .is_login.is_vip_not_active .bottom .info h3:nth-of-type(2) {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.main_customer .main .user_profile .is_login.is_vip_active .time_expire {
+  margin-top: 0.08rem;
+  color: #9c9c9c;
+}
+.main_customer .main .user_profile .is_login.is_vip_active .vip_rights {
+  text-align: center;
+  justify-content: space-between;
+  padding: 0.1rem 0;
+}
+.main_customer .main .user_profile .is_login.is_vip_active .vip_rights p {
+  color: #9c9c9c;
+}
+.main_customer .main .user_profile .is_login.is_vip_active .vip_rights p.num {
+  font-size: 0.15rem;
+  color: #3e3e3e;
+}
+.main_customer .main .user_profile .is_login.is_vip_active .bottom {
+  display: block;
+  position: relative;
+}
+.main_customer .main .user_profile .is_login.is_vip_active .bottom .info {
+  height: 100%;
+  line-height: 0.385rem;
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  margin-left: -30%;
+  top: 0;
+  color: #ffffff;
+}
+.main_customer .main .pass_card_wrap {
+  padding-bottom: 0.14rem;
+}
+.main_customer .main .pass_card_wrap .info {
+  position: relative;
+  width: 3.35rem;
+  height: 0.38rem;
+  line-height: 0.38rem;
+  text-align: center;
+  margin: auto;
+  background: url("../images/customer/pass_card_bg.png") no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.main_customer .main .pass_card_wrap .info strong {
+  font-size: 0.12rem;
+  color: #a38d6b;
+  font-weight: bold;
+}
+.main_customer .main .pass_card_wrap .info a {
+  position: absolute;
+  height: 0.2rem;
+  line-height: 0.2rem;
+  right: 0.16rem;
+  top: 50%;
+  margin-top: -0.1rem;
+  font-weight: bold;
+  color: #a38d6b;
+  text-decoration: underline;
+}
+.main_customer .main .pass_card_wrap .info a.buy_link {
+  color: #ff4001;
+}
+.main_customer .main .orders_module a {
+  float: left;
+  width: 20%;
+  height: 0.72rem;
+  position: relative;
+  padding-top: 0.4rem;
+  text-align: center;
+}
+.main_customer .main .orders_module a:before {
+  content: '';
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url("../images/icons_1.png") no-repeat center;
+  -webkit-background-size: 2rem 2rem;
+  background-size: 2rem 2rem;
+  top: 50%;
+  margin-top: -0.2rem;
+  background-position: 0 0;
+  left: 50%;
+  margin-left: -0.2rem;
+  top: 0.24rem;
+}
+.main_customer .main .orders_module a:nth-of-type(1):before {
+  background-position: 0 0;
+}
+.main_customer .main .orders_module a:nth-of-type(2):before {
+  background-position: -0.4rem 0;
+}
+.main_customer .main .orders_module a:nth-of-type(3):before {
+  background-position: -0.8rem 0;
+}
+.main_customer .main .orders_module a:nth-of-type(4) {
+  background: #f9f9f9;
+  width: 40%;
+}
+.main_customer .main .orders_module a:nth-of-type(4):before {
+  background-position: -1.2rem 0;
+}
+.main_customer .main .orders_module a:nth-of-type(4):after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 50%;
+  margin-top: -4px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #ffffff;
+}
+.main_customer .main .orders_module a i {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #ff4001;
+  z-index: 1;
+  content: normal;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 0.12rem;
+  margin-left: 0.12rem;
+}
+.main_customer .main .menu_list a {
+  position: relative;
+  display: block;
+  line-height: 0.2rem;
+  margin-left: 0.2rem;
+  padding: 0.14rem 0 0.14rem 0.2rem;
+}
+.main_customer .main .menu_list a:before {
+  content: '';
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url("../images/icons_1.png") no-repeat center;
+  -webkit-background-size: 2rem 2rem;
+  background-size: 2rem 2rem;
+  top: 50%;
+  margin-top: -0.1rem;
+  background-position: 0 0;
+  left: -0.02rem;
+}
+.main_customer .main .menu_list a.no_icon {
+  padding-left: 0;
+}
+.main_customer .main .menu_list a.no_icon:before {
+  content: normal;
+}
+.main_customer .main .menu_list a:after {
+  content: '';
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url("../images/icons_1.png") no-repeat center;
+  -webkit-background-size: 2rem 2rem;
+  background-size: 2rem 2rem;
+  top: 50%;
+  margin-top: -0.1rem;
+  background-position: -0.8rem -0.4rem;
+  right: 0.12rem;
+}
+.main_customer .main .menu_list a.coupon_link:before {
+  background-position: 0 -0.4rem;
+}
+.main_customer .main .menu_list a.storedCard_link:before {
+  content: '';
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url("../images/icons.png") no-repeat center;
+  -webkit-background-size: 2rem 2rem;
+  background-size: 2rem 2rem;
+  top: 50%;
+  margin-top: -0.1rem;
+  background-position: -1.4rem -1rem;
+}
+.main_customer .main .menu_list a.club_link:before {
+  background-position: -0.2rem -0.4rem;
+}
+.main_customer .main .menu_list a.question_link:before {
+  background-position: -0.4rem -0.4rem;
+}
+.main_customer .main .menu_list a i {
+  display: inline-block;
+  padding: 0 2px;
+  font-size: 8px;
+  min-width: 10px;
+  height: 10px;
+  line-height: 10px;
+  position: relative;
+  background: #ff4001;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 0.05rem;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: 2px;
+}
+.main_customer .main .hot_line {
+  margin: 0.24rem auto 0.1rem;
+  width: 100%;
+  text-align: center;
+}
+.main_customer .main .hot_line a {
+  position: relative;
+  padding-left: 0.2rem;
+  line-height: 0.2rem;
+  display: inline-block;
+}
+.main_customer .main .hot_line a:before {
+  content: '';
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url("../images/icons_1.png") no-repeat center;
+  -webkit-background-size: 2rem 2rem;
+  background-size: 2rem 2rem;
+  top: 50%;
+  margin-top: -0.1rem;
+  background-position: -0.6rem -0.4rem;
+  left: -0.02rem;
+}
+.main_customer .main .kefu {
+  margin: 0.24rem auto 0.1rem;
+  text-align: center;
+}
+.main_customer .main .kefu .customer_btn {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  padding-top: 0.28rem;
+}
+.main_customer .main .kefu .customer_btn:before {
+  content: '';
+  position: absolute;
+  width: 0.15rem;
+  height: 0.14rem;
+  background: url("../images/goods/udesk.png") no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  left: 50%;
+  margin-left: -0.08rem;
+  top: 0.1rem;
+}

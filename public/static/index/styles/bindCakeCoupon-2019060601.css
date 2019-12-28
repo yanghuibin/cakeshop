@@ -1,0 +1,87 @@
+﻿@charset "UTF-8";
+.main_bind_cake_coupon {
+  background: #e7eaef;
+}
+.main_bind_cake_coupon .main {
+  padding-bottom: 1.5rem;
+}
+.main_bind_cake_coupon .main .section_2 {
+  width: 75%;
+  background: #ffffff;
+  margin: auto;
+}
+.main_bind_cake_coupon .main .section_2 .form {
+  padding: 0.15rem;
+}
+.main_bind_cake_coupon .main .section_2 .icon_wrap {
+  position: relative;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: 0 auto 0.15rem;
+}
+.main_bind_cake_coupon .main .section_2 .icon_wrap i {
+  content: '';
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url("../images/icons.png") no-repeat center;
+  -webkit-background-size: 2rem 2rem;
+  background-size: 2rem 2rem;
+  top: 50%;
+  margin-top: -0.1rem;
+  background-position: -0.4rem -0.6rem;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.main_bind_cake_coupon .main .section_2 .input_wrap {
+  width: 100%;
+  margin-bottom: 0.1rem;
+}
+.main_bind_cake_coupon .main .section_2 .input_wrap input {
+  width: 100%;
+  height: 0.45rem;
+  text-align: center;
+  line-height: 0.45rem;
+  background: #f0f0f0;
+}
+.main_bind_cake_coupon .main .section_2 .input_wrap.yzm_wrap {
+  margin-bottom: 0;
+}
+.main_bind_cake_coupon .main .section_2 .input_wrap.yzm_wrap p {
+  align-items: center;
+  height: 100%;
+}
+.main_bind_cake_coupon .main .section_2 .input_wrap.yzm_wrap p .captchaWrap {
+  text-align: center;
+}
+.main_bind_cake_coupon .main .section_2 .input_wrap.yzm_wrap p .captchaWrap img {
+  display: block;
+  width: 0.7rem;
+  height: 0.28rem;
+  margin: 0 0.04rem;
+}
+.main_bind_cake_coupon .main .section_2 .input_wrap.yzm_wrap p .captchaWrap span {
+  display: inline-block;
+  height: 0.2rem;
+  line-height: 0.2rem;
+}
+.main_bind_cake_coupon .main .section_2 .btn_wrap {
+  margin-top: 0.18rem;
+}
+.main_bind_cake_coupon .main .section_2 .btn_wrap button {
+  width: 100%;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  background: #c5a364;
+  color: #ffffff;
+  font-size: 0.15rem;
+}
+.main_bind_cake_coupon .main .section_2 .btn_wrap button:disabled {
+  background: #9c9c9c;
+}
+.main_bind_cake_coupon .main_login_pop .close_login_pop {
+  display: none;
+}
